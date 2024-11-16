@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering</title>
+    <style>
+        body{
+           
+            background-color: rgb(177, 213, 234);
+            
+            
+            
+        }
+        .waraper{
+            
+            height: 100%;
+            width: 100%;
+            display: flex;
+            
+            
+        }
+        .main1{
+            height: 900px;
+            width: 50%;
+            color: rgba(255, 0, 0, 0.992);
+            background-image: url(div1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: right;
+            padding-right: 10px;
+            -webkit-text-stroke: 1.5px rgba(21, 4, 249, 0.616);
+        }
+        .main2{ 
+            height: 854px;
+            width: 50%;
+            background-image: url(div2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 23px;
+            
+        }
+        #tag{
+            text-align: center;
+             color: blue;
+            -webkit-text-stroke: 2px rgba(2, 14, 2, 0.616);
+        }
+        
+            
+            
+            
+            
+            
+
+       
+    </style>
+</head>
+<body>
+    <h1 id="tag">School Admission Form</h1>
+    <div class="waraper">
+        <div class="main1">
+            
+            <h3>Student's Name* : </h3>
+            <h3>Class you want to apply for* : </h3>
+            <h3>Student's DOB* : </h3>
+            <h3>Parent/Guardian Name* : </h3>
+            <h3>Current Address* : </h3><br><br><br><br><br><br>
+            <h3 style="padding: 7px;">Phone* : </h3>
+            <h3 style="padding: 8px;">Email* : </h3>
+            
+        </div>
+        <div class="main2">
+            <!-- Student's Name -->
+            <input type="text" id="first-name" placeholder="First" required>
+        <input type="text" id="last-name" placeholder="Last"><br><br>
+            <!-- Class you want to apply for* -->
+        <input type="text" id="class" placeholder="e.g., Class 2025-2026" required><br><br>
+        <!-- Student's DoB* -->
+        <input type="date" id="dob" required><br><br>
+        <!-- Parent/Guardian Name* -->
+        <input type="text" id="parent-first-name" placeholder="First" required>
+        <input type="text" id="parent-last-name" placeholder="Last"><br><br>
+        <!-- Current Address*  -->
+        <input type="text" id="street-address" placeholder="Street Address"><br><br>
+        <input type="text" id="street-address2" placeholder="Street Address Line 2"><br><br>
+        <input type="text" id="city" placeholder="City">
+        <input type="text" id="region" placeholder="Region"><br><br>
+        <input type="text" id="postal-code" placeholder="Postal / Zip Code">
+        <select id="country" required>
+            <option value="">Select Country</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="au">Australia</option>
+            <option value="in">India</option>
+        </select><br><br><br>
+        <!-- Phone* -->
+        <input type="tel" id="phone" placeholder="### ### ####"><br><br><br>
+
+        <!-- Email*  -->
+        <input type="email" id="email" placeholder="Your admission confirmation will be sent via email" required><br><br>
+        <!-- submit -->
+        <button type="submit">Submit</button>
+
+        
+    
+
+            
+        </div>
+    </div>
+        
+        
+        
+    
+</body>
+</html>
